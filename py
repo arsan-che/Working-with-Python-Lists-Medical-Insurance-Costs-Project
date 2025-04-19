@@ -31,3 +31,15 @@ print(f'Here are the medical records sorted by insurance cost: {list_of_medical_
 # Select and print the three cheapest insurance costs
 cheapest_three = list_of_medical_records[:3]
 print(f'Here are the three cheapest insurance costs in our medical records: {cheapest_three}')
+
+# Select and print the three most expensive insurance costs
+priciest_three = list_of_medical_records[-3:]
+print(f'Here are the three most expensive insurance costs in our medical records: {priciest_three}')
+
+# Count and print the number of occurrences of the name 'Paul'
+occurences_paul = names.count('Paul')
+print(f'There are {occurences_paul} individuals with the name Paul in our medical records.')
+
+# Sort names alphabetically and create a new list of medical records
+names.sort()
+alphabetical_medical_records = list(zip(insurance_costs, names))
