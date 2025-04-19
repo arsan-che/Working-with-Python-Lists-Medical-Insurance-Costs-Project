@@ -18,3 +18,16 @@ print(list_of_medical_records)
 # Calculate and print the number of medical records
 num_medical_records = len(list_of_medical_records)
 print(f'There are {num_medical_records} medical records.')
+
+# Select and print the first medical record
+first_medical_record = list_of_medical_records[0]
+print(first_medical_record)
+print(f'Here is the first medical record: {first_medical_record}')
+
+# Sort the medical records by insurance cost and print them
+list_of_medical_records.sort()
+print(f'Here are the medical records sorted by insurance cost: {list_of_medical_records}')
+
+# Select and print the three cheapest insurance costs
+cheapest_three = list_of_medical_records[:3]
+print(f'Here are the three cheapest insurance costs in our medical records: {cheapest_three}')
