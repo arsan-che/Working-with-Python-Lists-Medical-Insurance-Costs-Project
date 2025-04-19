@@ -7,3 +7,14 @@ insurance_costs = [13262.0, 4816.0, 6839.0, 5054.0, 14724.0, 5360.0, 7640.0, 607
 # Add a new individual 'Priscilla' and her insurance cost to the lists
 names.append('Priscilla')
 insurance_costs.append(8320.0)
+
+# Combine insurance costs and names into a list of tuples using zip
+medical_records = zip(insurance_costs, names)
+list_of_medical_records = list(medical_records)
+
+# Print the list of medical records
+print(list_of_medical_records)
+
+# Calculate and print the number of medical records
+num_medical_records = len(list_of_medical_records)
+print(f'There are {num_medical_records} medical records.')
