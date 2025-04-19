@@ -40,6 +40,12 @@ print(f'Here are the three most expensive insurance costs in our medical records
 occurences_paul = names.count('Paul')
 print(f'There are {occurences_paul} individuals with the name Paul in our medical records.')
 
+# Print the alphabetically sorted medical records
+print(alphabetical_medical_records)
+
+# Select and print the middle five records from the alphabetically sorted list
+middle_five_records = alphabetical_medical_records[3:8]
+
 # Sort names alphabetically and create a new list of medical records
 names.sort()
 alphabetical_medical_records = list(zip(insurance_costs, names))
